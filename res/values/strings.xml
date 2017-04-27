@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">农业监控</string>
+    <string name="ActivityMainTitle">农业监控平台</string>
+    <string name="main__home">首页</string>
+    <string name="main_lizhi">荔枝</string>
+    <string name="main_mangguo">芒果</string>
+    <string name="main_code_buy">农业监控平台</string>
+    <string name="main_navigation_more">更多</string>
+    <string name="app_close">关闭应用程序</string>
+    <string name="btn_cancel">取 消</string>
+    <string name="btn_ok">确 定</string>
+    <string name="cart_item_hint">购物车还是空的,快去选购吧~ !</string>
+    <string name="name">农业监控平台</string>
+    <string name="guifeili">无核荔枝: </string>
+    <string name="descript_lizhi">"详细: "</string>
+    <string name="select_pingzhong">请选择荔枝的品种:</string>
+    <string name="select_mangguo_pingzhong">请选择芒果的品种</string>
+    <string name="title_activity_lizhi">LizhiActivity</string>
+    <string name="lizhi">荔枝</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mangguo">MangguoActivity</string>
+    <string name="mangguo">芒果</string>
+    <string name="sunshine">光照强度</string>
+    <string name="humidity">湿度</string>
+    <string name="temperature">温度</string>
+    <string name="lizhi_co2_jianjie" formatted="false">   植物的生长是通过光合作用储存有机物来实现的，因此光照强度对植物的生长发育影响很大，它直接影响植物光合作用的强弱。光照强度与植物光合作用没有固定的比例关系，但是在一定光照强度范围内，在其它条件满足的情况下，随着光照强度的增加，光合作用的强度也相应的增加。但光照强度超过光的饱和点时，光照强度再增加，光合作用强度不增加。光照强度过强时，会破坏原生质，引起叶绿素分解，或者使细胞失水过多而使气孔关闭，造成光合作用减弱，甚至停止。光照强度弱时，植物光合作用制造有机物质比呼吸作用消耗的还少，植物就会停止生长。只有当光照强度能够满足光合作用的要求时，植物才能正常生长发育。</string>
+    <string name="lizhi_humidity_jianjie" formatted="false"> 土壤水分不适对农作物群体的影响表现为单位面积的干重和叶面积指数（LAI）下降。采用通径分析衡量了出苗率和单株幼苗生长两因子对群体影响的大小。结果表明：单位面积干重下降主因是单株干重下降，叶面积指数下降主因是出苗率下降。土壤湿度大于17％且小于44％时，对小麦出苗及幼苗生长各项指标的影响幅度一般在20％以内，而低于17％或高于44％的土壤湿度对农作物的影响幅度急剧增加。农作物对土壤水分不适具有一定的适应性反应。</string>
+    <string name="lizhi_temper_jianjie" formatted="false">光合作用积累有机物质，呼吸作用消耗有机物质，有机物积累越多，产量就越高，品质也提高，反之，产量则少，品质也低。在适宜农作物生长的温度范围内，温度越高，生长越旺盛，光合作用和呼吸作用也就越旺盛。白天光合作用与呼吸作用同时进行，因此，在一定温度范围内，白天温度越高越好，而晚上只进行呼吸作用，温度越高，呼吸作用越强，消耗的有机物质就越多，而温度越低，呼吸作用越弱，消耗的有机物质就越少，因此在一定温度范围内，晚上温度越低越好。这就是为什么昼夜温差愈大（白天高、晚上低），农作物产量增高，品质提高的原理。</string>
+
+</resources>

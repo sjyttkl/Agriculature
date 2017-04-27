@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.sjyttkl.Agriculature.MangguoActivity" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#106184" />
+
+        <ImageView
+            android:id="@+id/progressImage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/android_title_bg_progress"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/lizhi_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_image"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tv_lizhi_titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="荔枝"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+  
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/lizhi_acitity_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/console_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_navigation_background"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/Rb_lizhi_co2"
+                style="@style/MMTabButton"
+                android:checked="true"
+                android:drawableTop="@drawable/bg_checkbox_menu_icon_1"
+                android:text="@string/sunshine"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/Rb_lizhi_temper"
+                style="@style/MMTabButton"
+                android:layout_gravity="bottom"
+                android:drawableTop="@drawable/bg_checkbox_menu_icon_2"
+                android:text="@string/temperature"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/Rb_lizhi_humid"
+                style="@style/MMTabButton"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/bg_checkbox_menu_icon_3"
+                android:text="@string/humidity"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </LinearLayout>
+    
+
+</RelativeLayout>

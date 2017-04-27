@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" >
+
+        <com.sjyttkl.Agriculature.circle.ColorfulRingProgressView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mangguo_humidity_crpv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:bgColor="#e1e1e1"
+            app:fgColorEnd="#009900"
+            app:fgColorStart="#00FF33"
+            app:percent="75"
+            app:startAngle="0"
+            app:strokeWidth="21dp" />
+
+        <TextView
+            android:id="@+id/mangguo_humidity_tvPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="75"
+            android:textColor="#000"
+            android:textSize="34sp" />
+    </FrameLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frame"
+        android:textSize="35sp"
+        android:text="湿度实时监控" />
+    <LinearLayout
+        android:id="@+id/mangguo_humidity_llPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="percent:" />
+
+        <SeekBar
+            android:id="@+id/mangguo_humidity_sbPercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="75" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mangguo_humidity_llStartAngle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mangguo_humidity_llPercent"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   startAngle: " />
+
+        <SeekBar
+            android:id="@+id/mangguo_humidity_sbStartAngle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="360"
+            android:progress="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mangguo_humidity_llStrokeWidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mangguo_humidity_llStartAngle"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" strokeWidth:" />
+
+        <SeekBar
+            android:id="@+id/mangguo_humidity_sbStrokeWidth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="40"
+            android:progress="21" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mangguo_humidity_tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
